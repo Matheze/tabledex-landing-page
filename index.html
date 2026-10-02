@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableDEX - O Hub Definitivo para Jogos de Mesa e TCG</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #6366f1;
+            --accent-hover: #4f46e5;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        h1 span {
+            color: var(--accent-color);
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .feature-item h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        .feature-item p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        input[type="email"] {
+            padding: 0.9rem;
+            border-radius: 6px;
+            border: 1px solid #334155;
+            background: #0f172a;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        button {
+            padding: 0.9rem;
+            border-radius: 6px;
+            border: none;
+            background: var(--accent-color);
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: var(--accent-hover);
+        }
+
+        .footer-note {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Table<span>DEX</span></h1>
+        <p class="subtitle">O ecossistema definitivo para gerenciar sua ludoteca e cartas colecionáveis em um só lugar.</p>
+        
+        <div class="features">
+            <div class="feature-item">
+                <h3>Gerencie sua Prateleira</h3>
+                <p>Controle jogos, expansões e o estado do seu acervo físico e digital.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Comunidade & Reviews</h3>
+                <p>Avalie partidas, escreva resenhas rápidas e crie listas personalizadas.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Descoberta Inteligente</h3>
+                <p>Encontre recomendações perfeitas e conexões para suas próximas mesas.</p>
+            </div>
+        </div>
+
+        <form action="#" method="POST" onsubmit="alert('Obrigado por se cadastrar! Seu interesse foi registrado com sucesso.'); return false;">
+            <input type="email" placeholder="Digite o seu melhor e-mail..." required>
+            <button type="submit">Quero acesso antecipado (VIP)</button>
+        </form>
+
+        <p class="footer-note">🚀 Seja um dos primeiros a testar nosso MVP. Sem spam, prometemos!</p>
+    </div>
+
+</body>
+</html>
